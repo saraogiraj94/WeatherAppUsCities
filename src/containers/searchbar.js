@@ -28,7 +28,7 @@ export default class SearchBarComponent extends Component{
     }
 
     onInputChange(event){
-        console.log("The input is "+event.target.value);
+     //   console.log("The input is "+event.target.value);
         this.setState({
             term:event.target.value
         })
