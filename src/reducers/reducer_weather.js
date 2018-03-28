@@ -6,6 +6,7 @@ export default function(state=[],action){
 
     switch(action.type){
         case FETCH_WEATHER:
+            // we never ever mutate the existing state instead create new
             return [action.payload.data, ... state] ;
             break;
         default:
